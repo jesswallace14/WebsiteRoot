@@ -3,22 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
+    <title>Root | Hydroponic Gardens for Every Home</title>
     <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="hero">
-      <section class="card">
-        <p class="eyebrow">Welcome</p>
-        <h1>Hello, World!</h1>
-        <p class="body">
-          This is a tiny static site scaffolded with HTML, CSS, and a sprinkle
-          of JavaScript.
-        </p>
-        <button id="greet-button" type="button">Click me</button>
-        <p id="greet-output" aria-live="polite"></p>
-      </section>
-    </main>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="logo" aria-label="Root">Root</div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#story">Our Story</a>
+          <a href="#systems">Systems</a>
+          <a href="#impact">Impact</a>
+          <a href="#support">Support</a>
+        </nav>
+        <a class="button button-ghost" href="#cta">Shop systems</a>
+      </header>
+
+      <main>
+        <section class="hero" id="top">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Hydroponics for everyone</p>
+              <h1>Grow bold flavor on a humble budget.</h1>
+              <p>
+                Root builds low-cost, full-spectrum hydroponic systems inspired
+                by urban gardeners. Plug it in, sow your seed pods, and harvest
+                herbs, salads, and vine crops 365 days a year.
+              </p>
+              <div class="hero-actions">
+                <a class="button" href="#systems">Explore the systems</a>
+                <button class="button button-ghost" type="button" id="tour-button">
+                  Watch the story
+                </button>
+              </div>
+              <p class="hero-subtext">
+                Trusted by 120,000 growers across 28 countries and counting.
+              </p>
+            </div>
+            <div class="hero-media" aria-hidden="true">
+              <div class="hero-dial">
+                <span>Auto light</span>
+                <span>21 nutrients</span>
+                <span>4L reservoir</span>
+              </div>
+              <div class="hero-photo">
+                <div class="photo-overlay">Root One</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="metrics" id="impact">
+          <div class="section-heading">
+            <p class="eyebrow">Impact today</p>
+            <h2>Big harvest, tiny footprint.</h2>
+          </div>
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <h3>2.5M+</h3>
+              <p>meals harvested indoors with Root systems since 2021.</p>
+            </article>
+            <article class="metric-card">
+              <h3>87%</h3>
+              <p>average savings compared to grocery-store herbs.</p>
+            </article>
+            <article class="metric-card">
+              <h3>28</h3>
+              <p>countries with next-day shipping powered by Root partners.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="story" id="story">
+          <div class="section-heading">
+            <p class="eyebrow">Our story</p>
+            <h2>Built in apartments, perfected in community kitchens.</h2>
+          </div>
+          <div class="story-grid">
+            <div class="story-controls" role="tablist" aria-label="Story timeline">
+              <button
+                class="story-step is-active"
+                data-story="seed"
+                aria-selected="true"
+              >
+                2019 · The seed
+              </button>
+              <button class="story-step" data-story="prototype" aria-selected="false">
+                2020 · Prototyping
+              </button>
+              <button class="story-step" data-story="launch" aria-selected="false">
+                2021 · Launch
+              </button>
+              <button class="story-step" data-story="scale" aria-selected="false">
+                2023 · Scaling
+              </button>
+              <button class="story-step" data-story="future" aria-selected="false">
+                2025 · What's next
+              </button>
+            </div>
+            <article class="story-panel">
+              <p class="story-meta" id="story-meta">2019 · Detroit, MI</p>
+              <h3 id="story-title">Breaking ground indoors</h3>
+              <p id="story-body">
+                Founder Amara Johnson hacked together the first Root rig after
+                juggling three side jobs and craving fresh food through Detroit
+                winters. The goal was simple: a garden that costs less than a
+                weekly grocery run and never drowns your basil.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="systems" id="systems">
+          <div class="section-heading">
+            <p class="eyebrow">Hydroponic systems</p>
+            <h2>Choose the setup that fits your counter space.</h2>
+          </div>
+          <div class="systems-grid">
+            <article class="system-card">
+              <h3>Root One</h3>
+              <p>Flagship 12-pod system with adaptive LEDs and silent pumps.</p>
+              <ul>
+                <li>Auto-dosing nutrient cartridges</li>
+                <li>Wi-Fi optional — fully offline friendly</li>
+                <li>Starts at $199</li>
+              </ul>
+              <a href="#cta" class="button button-inline">Reserve a unit</a>
+            </article>
+            <article class="system-card">
+              <h3>Root Mini</h3>
+              <p>Compact 6-pod system for windowsills, vans, and micro lofts.</p>
+              <ul>
+                <li>Modular reservoirs snap together</li>
+                <li>USB-C powered grow lights</li>
+                <li>Starts at $129</li>
+              </ul>
+              <a href="#cta" class="button button-inline">See colorways</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta" id="cta">
+          <div class="cta-card">
+            <div>
+              <p class="eyebrow">Ready to grow?</p>
+              <h2>Join the Root Collective.</h2>
+              <p>
+                Pre-order ships in March with free starter pods, nutrient packs,
+                and live workshop access.
+              </p>
+            </div>
+            <form class="cta-form">
+              <label for="email" class="sr-only">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@email.com"
+                required
+              />
+              <button type="submit" class="button">Get early access</button>
+              <p class="form-disclaimer">
+                By signing up you agree to receive Root updates. You may opt out
+                any time.
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="support">
+        <div>
+          <div class="logo">Root</div>
+          <p>Made with 💚 in Detroit & Oslo. Growing healthy food for all.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@growwithroot.com">Contact</a>
+          <a href="#story">Our story</a>
+          <a href="#systems">Tech specs</a>
+          <a href="#impact">Impact report</a>
+        </div>
+        <p class="copyright">© 2025 Root Cooperative. All rights reserved.</p>
+      </footer>
+    </div>
+
     <script src="./main.js" type="module"></script>
   </body>
 </html>
