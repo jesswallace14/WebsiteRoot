@@ -50,7 +50,7 @@ img {
 }
 
 .logo img {
-  height: 42px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -146,9 +146,17 @@ p {
 
 .hero-media {
   background: var(--panel);
-  padding: 1.5rem;
-  border-radius: 24px;
+  padding: 2rem;
+  border-radius: 28px;
   border: 1px solid var(--border);
+}
+
+.hero-media img {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
 }
 
 .hero-media figcaption {
@@ -193,7 +201,10 @@ p {
 
 .feature-card img {
   width: 100%;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .feature-card figcaption {
