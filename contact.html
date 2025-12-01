@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root | Contact</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="logo" aria-label="Root">
+          <img src="./assets/logowhite.png" alt="Root logo" />
+          <span class="sr-only">Root</span>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./index.html#hero">Home</a>
+          <a href="./index.html#mission">Mission</a>
+          <a href="./index.html#features">Features</a>
+          <a href="./contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
+
+      <main class="contact-main">
+        <section class="contact-hero">
+          <p class="eyebrow">Get in touch</p>
+          <h1>Let's plan your automated grow room.</h1>
+          <p>
+            Share your project, ask about custom installations, or request a demo.
+            The Root team will respond within two business days.
+          </p>
+        </section>
+
+        <section class="contact-grid">
+          <article class="contact-card">
+            <h2>Talk with a grow specialist</h2>
+            <p>
+              Email us anytime or schedule a call to discuss financing, bundled
+              hardware, or pilot programs for community kitchens.
+            </p>
+            <dl class="contact-details">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@growwithroot.com">hello@growwithroot.com</a></dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+13135550123">+1 (313) 555-0123</a></dd>
+              </div>
+              <div>
+                <dt>Studio</dt>
+                <dd>2450 Gratiot Ave, Detroit, MI 48207</dd>
+              </div>
+            </dl>
+          </article>
+
+          <form
+            class="contact-form"
+            action="https://example.com/contact"
+            method="post"
+          >
+            <label for="full-name">Full name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Alex Rivera"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your grow goals..."
+              required
+            ></textarea>
+
+            <button type="submit" class="button">Send message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span aria-label="2025">2025</span> Root. Automated hydroponics for every home.</p>
+      </footer>
+    </div>
+  </body>
+</html>
+
